@@ -1,32 +1,48 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
 <html>
+  <head>
 
-<head>
-<title>Upload Form</title>
-<!-- Dropzone CSS & JS -->
-<link href='<?= base_url(); ?>assets/css/dropzone.css' type='text/css' rel='stylesheet'>
-<script src='<?= base_url(); ?>assets/js/dropzone.js' type='text/javascript'></script>
+    <!-- Dropzone CSS & JS -->
+    <link href='<?= base_url() ?>assets/dropzone/dropzone.css' type='text/css' rel='stylesheet'>
+    <script src='<?= base_url() ?>assets/dropzone/dropzone.js' type='text/javascript'></script>
 
-<!-- Dropzone CDN -->
+    <!-- Dropzone CDN -->
     <!--
     <link href='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.css' type='text/css' rel='stylesheet'>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js' type='text/javascript'></script>
     -->
-
-<link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.css">
-<script>
+    <style>
+    .content{
+      width: 50%;
+      padding: 5px;
+      margin: 0 auto;
+    }
+    .content span{
+      width: 250px;
+    }
+    .dz-message{
+      text-align: center;
+      font-size: 28px;
+    }
+    </style>
+    <script>
     // Add restrictions
     Dropzone.options.fileupload = {
       acceptedFiles: 'image/*',
-      maxFilesize: 0
+      maxFilesize: 1 // MB
     };
-</script>
+    </script>
+  </head>
+  <body>
 
-</head>
-
-<body>
-	<div class='content'>
-      <form action="<?= base_url(); ?> upload/do_upload" class="dropzone" id="fileupload">
+    <div class='content'>
+      <!-- Dropzone -->
+      <form action="<?= base_url('index.php/upload/fileupload') ?>" class="dropzone" id="fileupload">
       </form>
-  </div>
-</body>
+    </div>
+
+  </body>
 </html>

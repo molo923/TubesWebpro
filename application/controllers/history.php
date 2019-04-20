@@ -12,7 +12,8 @@ class history extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('templates/header');
+    $data['judul'] = 'History';
+		$this->load->view('templates/header', $data);
     $this->load->view('history/index');
     $this->load->view('templates/footer');
 	}
