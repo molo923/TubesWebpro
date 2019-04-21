@@ -99,7 +99,7 @@
 
                 <!--Grid column-->
                 <div class="col-md-4 mb-1">
-                    <i class="fas fa-address-card"></i>
+                    <i class="fas fa-address-card fa-3x"></i>
                     <h4 class="my-4">Daftarnya Mudah</h4>
                     <p>Mau daftar ke SMASH?, cuma butuh identitas diri. Datamu dijamin aman.</p>
                 </div>
@@ -107,7 +107,7 @@
 
                 <!--Grid column-->
                 <div class="col-md-4 mb-1">
-                    <i class="fas fa-comment-dollar"></i>
+                    <i class="fas fa-comment-dollar fa-3x"></i>
                     <h4 class="my-4">Dapet DUIT</h4>
                     <p>Daripada sampahmu nganggur dan menumpuk dirumah, mending kamu jual aja pakai SMASH.</p>
                 </div>
@@ -115,7 +115,7 @@
 
                 <!--Grid column-->
                 <div class="col-md-4 mb-1">
-                    <i class="fas fa-bicycle"></i>
+                    <i class="fas fa-bicycle fa-3x"></i>
                     <h4 class="my-4">Layanan Jemput</h4>
                     <p>Males ngebuang sampah yang ada dirumah?, tenang aja, SMASH ada layanan jemputnya..</p>
                 </div>
@@ -123,8 +123,6 @@
 
             </div>
             <!--Grid row-->
-
-
 
         </section>
         <!--Section: Best Features-->
