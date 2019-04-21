@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="<?= base_url(); ?>">Regis</a>
-                    <a class="nav-item nav-link" href="<?= base_url(); ?>history">Login</a>
+                    <a class="nav-item nav-link" href="<?= base_url(); ?>">Login</a>
                 </div>
             </div>
         </div>
