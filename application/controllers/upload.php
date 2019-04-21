@@ -13,7 +13,10 @@ class upload extends CI_Controller {
   public function index(){
 
     // load view
+    $data['judul'] = 'Home';
+		$this->load->view('templates/header', $data);
     $this->load->view('timbulan/form');
+    $this->load->view('templates/footer');
 
   }
 

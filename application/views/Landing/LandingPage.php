@@ -9,13 +9,13 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  
+
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url('assets/Landing/css/bootstrap.min.css')?>" rel="stylesheet">
-  
+
   <!-- Material Design Bootstrap -->
   <link href="<?php echo base_url('assets/Landing/css/mdb.min.css')?>" rel="stylesheet">
-  
+
   <!-- Your custom styles (optional) -->
   <link href="<?php echo base_url('assets/Landing/css/style.css')?>" rel="stylesheet">
 

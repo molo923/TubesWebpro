@@ -1,3 +1,33 @@
-.badge {
-				margin-left: 3px;
+body{
+	margin-top: 59px;
+}
+h1{
+	text-align: center;
+}
+
+.content{
+	width: 50%;
+	padding: 5px;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.content span{
+	width: 250px;
+}
+.dz-message{
+	text-align: center;
+	font-size: 28px;
+}
+input{
+	margin-top: 17px;
+	margin-bottom: -3px;
+	width: 100%;
+	text-align: center;
+}
+textarea{
+	display: block;
+	margin-top: 12px;
+	margin-bottom: -8px;
+	width: 100%;
+	text-align: center;
 }
