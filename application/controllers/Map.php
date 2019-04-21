@@ -15,6 +15,6 @@ class Map extends CI_Controller{
             $marker['position']="37.4419, -122.1419";
             $this->googlemaps->add_marker($marker);
             $data['map']=$this->googlemaps->create_map();
-        $this->load->view('v_map',$data);
+        $this->load->view('home/index',$data);
     }
 }
