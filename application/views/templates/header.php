@@ -33,7 +33,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                      <a class="nav-item nav-link" href="<?= base_url(); ?>jemputsampah">Home</a>
+                      <a class="nav-item nav-link" href="<?= base_url(); ?>home">Home</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>history">History</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>help">Help</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>profile">Profile</a>
