@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Dropzone CSS & JS -->
     <link href='<?= base_url() ?>assets/dropzone/dropzone.css' type='text/css' rel='stylesheet'>
     <script src='<?= base_url() ?>assets/dropzone/dropzone.js' type='text/javascript'></script>
+    <!-- Style CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css" type="text/css">
     <!-- Dropzone CDN -->
     <!--
@@ -29,10 +30,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- Dropzone -->
       <form action="<?= base_url('index.php/upload/fileupload') ?>" class="dropzone" id="fileupload">
       </form>
-      <form class="" action="index.html" method="post">
-          <input type="text" name="judul" placeholder="judul">
-          <textarea type="text" name="deskripsi" placeholder="deskripsi"></textarea>
-          <input type="text" name="kota" placeholder="kota">
+      <form method="POST" action="<?= base_url() ?>timbulan_C/tambah">
+        <div class="form-group">
+          <input type="text" class="form-control" id="formGroupInput" placeholder="JUDUL" name="judul" required >
+        </div>
+        <div class="form-group">
+          <textarea type="text" class="form-control" id="formGroupInput" placeholder="DESKRIPSI" name="deskripsi" required ></textarea>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="formGroupInput" placeholder="KOTA" name="kota" required >
+        </div>
+        <input type="submit" class="btn btn-primary" id="input" value="input" placeholder="INPUT">
       </form>
     </div>
 

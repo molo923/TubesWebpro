@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Mahasiswa_model extends CI_model
+class akun_model extends CI_model
 {
 
 	public function getAllMahasiswa()
