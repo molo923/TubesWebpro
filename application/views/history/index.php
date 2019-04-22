@@ -10,17 +10,19 @@
     <table class="table">
       <thead>
         <tr>
-          <td>nama</td>
-          <td>sampah</td>
-          <td>berat</td>
+          <th>JUDUL</th>
+          <th>DESKRIPSI</th>
+          <th>KOTA</th>
         </tr>
       </thead>
       <tbody>
+        <?php foreach ($timbul as $t ) {?>
         <tr>
-          <td>pp</td>
-          <td>tt</td>
-          <td>dil</td>
+          <td><?php echo $t->judul ?></td>
+          <td><?php echo $t->deskripsi ?></td>
+          <td><?php echo $t->kota ?></td>
         </tr>
+        <?php } ?>
       </tbody>
     </table>
   </body>

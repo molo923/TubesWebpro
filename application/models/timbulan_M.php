@@ -6,7 +6,7 @@ class timbulan_M extends CI_model
 	public function getAllTimbulan()
 	{
 		//use query builder to get data table "timbulan"
- 		return $this->db->get('timbulan')->result_array();
+ 		return $this->db->get('timbulan')->result();
 	}
 
 	public function tambahDataTimbulan($data)
