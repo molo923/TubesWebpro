@@ -5,31 +5,56 @@ class jemputsampah extends CI_Controller{
 	public function __construct()
   {
     parent::__construct();
-
+		$this->load->model('M_web');
 
   }
+
 
 	public function index(){
 		$data['judul'] = 'Home';
 		$this->load->view('templates/header', $data);
+		$this->load->view('jemput_sampah/index.php',$data);
 		$this->load->view('templates/footer');
-		$this->load->view('templates/searchbar');
+	}
+	public function jemput()
+	{
 
-
-<<<<<<< HEAD
-=======
-		$this->load->library('googlemaps');
-				$config=array();
-				$config['center']="37.4419, -122.1419";
-				$config['zoom']=17;
-				$config['map_height']="400px";
-				$this->googlemaps->initialize($config);
-				$marker=array();
-				$marker['position']="37.4419, -122.1419";
-				$this->googlemaps->add_marker($marker);
-				$data['map']=$this->googlemaps->create_map();
-		$this->load->view('jemput_sampah/index',$data);
->>>>>>> 4c8bf504576698a03d3dd1028a46b1226fd19092
+		$data['datajemput'] = $this->M_web->GetJemput();
 	}
 
+	public function hapusjemput($nama)
+	{
+		$this->M_web->hapusjemput($nama);
+		redirect('index.php/web/mahasiswa');
+	}
+	public function tambahjemput()
+	{
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$massa = $this->input->post('massa');
+		$data = array(
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'massa' => $massa,
+		);
+		$this->M_web->tambah_jemput($data);
+
+		redirect('index.php/jemputsampah');
+
+	}
+
+	public function editjemput()
+	{
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$massa = $this->input->post('massa');
+		$data = array(
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'massa' => $massa,
+		);
+		$this->M_web->edit_jemput($nama,$data);
+
+		redirect('index.php/web/mahasiswa');
+	}
 }
