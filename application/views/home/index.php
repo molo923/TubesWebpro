@@ -5,12 +5,6 @@
         <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
         <!-- Bootstrap CSS File -->
             <link href="<?php echo base_url('assets/lib/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
-
-        <!-- Libraries CSS Files -->
-            <link href="<?php echo base_url('assets/lib/animate/animate.min.css')?>" rel="stylesheet">
-            <link href="<?php echo base_url('assets/lib/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet">
-            <link href="<?php echo base_url('assets/lib/ionicons/css/ionicons.min.css') ?>" rel="stylesheet">
-            <link href="<?php echo base_url('assets/lib/magnific-popup/magnific-popup.css') ?>" rel="stylesheet">
     </head>
     <body>
         <section id="intro">
