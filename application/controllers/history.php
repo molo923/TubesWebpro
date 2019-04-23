@@ -23,4 +23,26 @@ class history extends CI_Controller {
 		$data['timbul'] = $this->timbulan_M->getAllTimbulan();
 		$this->load->view('history/index',$data);
 	}
+
+  public function hapustimbulan($id)
+  {
+  $this->timbulan_M->hapus_timbulan($id);
+  redirect('index.php/history');
+  }
+
+  public function edittimbulan()
+	{
+    $id = $this->input->post('id');
+		$judul = $this->input->post('judul');
+		$deskripsi = $this->input->post('deskripsi');
+		$kota = $this->input->post('kota');
+		$data = array(
+			'judul' => $judul,
+			'deskripsi' => $deskripsi,
+			'kota' => $kota,
+		);
+		$this->timbulan_M->edit_timbulan($id,$data);
+
+		redirect('history');
+	}
 }

@@ -17,11 +17,10 @@ class timbulan_M extends CI_model
 		return;
 	}
 
-	public function hapusDataTimbulan($id)
+	public function hapus_timbulan($id)
 	{
-		//use query builder to delete data based on id
-		$this->db->where('id', $id);
-		$this->db->delete('timbulan');
+		$this->db->delete('timbulan', array('id' => $id));
+	    return;
 	}
 
 	public function getTimbulanById($id)
@@ -31,16 +30,11 @@ class timbulan_M extends CI_model
 		return $this->db->get('timbulan')->row_array();
 	}
 
-	public function ubahDataTimbulan($id)
+	public function edit_timbulan($id,$data)
 	{
-		$data = [
-			"judul" => $this->input->post('judul', true),
-			"deskripsi" => $this->input->post('deskripsi', true),
-			"kota" => $this->input->post('kota', true),
-		];
-		//use query builder class to update data timbulan based on id
 		$this->db->where('id', $id);
 		$this->db->update('timbulan', $data);
+	    return;
 	}
 
 	public function cariDataTimbulan()
