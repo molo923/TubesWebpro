@@ -27,14 +27,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `akun`
 --
-
-CREATE TABLE `akun` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `foto` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 -- --------------------------------------------------------
 
 --
