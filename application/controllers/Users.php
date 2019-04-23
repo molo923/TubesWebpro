@@ -10,7 +10,7 @@ class Users extends CI_Controller {
   // Dashboard
   public function index()
   {
-  $data['title'] = 'Dashboard - Tech Arise';
+  $data['title'] = 'Dashboard';
         $data['metaDescription'] = 'Dashboard';
         $data['metaKeywords'] = 'Dashboard';
         $this->load->view('users/dashboard', $data);
@@ -18,7 +18,7 @@ class Users extends CI_Controller {
   // Register
   public function register()
   {
-  $data['title'] = 'Register - Tech Arise';
+  $data['title'] = 'Register';
         $data['metaDescription'] = 'Register';
         $data['metaKeywords'] = 'Register';   
         $this->load->view('users/register', $data);
@@ -28,6 +28,7 @@ class Users extends CI_Controller {
   {
     $this->load->library('form_validation');
     // field name, error message, validation rules
+    $this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[2]');
     $this->form_validation->set_rules('username', 'User Name', 'trim|required|min_length[4]');
     $this->form_validation->set_rules('email', 'Your Email', 'trim|required|valid_email');
     $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
@@ -49,7 +50,8 @@ class Users extends CI_Controller {
       $this->user->setStatus(1);
       // insert values in database
       $this->user->createUser();
-      redirect('users/index');
+      /*redirect('users/index');*/
+      $this->index();
     }
   }
 }
