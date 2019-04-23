@@ -16,9 +16,9 @@ class M_web extends CI_Model {
 	    return;
 	}
 
-	public function edit_jemput($nama,$data)
+	public function edit_jemput($id_jemput,$data)
 	{
-		$this->db->where('nama', $nama);
+		$this->db->where('id_jemput', $id_jemput);
 		$this->db->update('jemput', $data);
 	    return;
 	}
