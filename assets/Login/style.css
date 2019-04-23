@@ -1,4 +1,9 @@
-.loginbox{
+body{
+ background: #456;
+ font-family: 'Open Sans', sans-serif;
+}
+
+.login{
     width: 500px;
     height: 420px;
     background: #1c2331;
@@ -11,58 +16,66 @@
     padding: 70px 30px;
 }
 
-h1{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
+.login-header,
+.login p{
+ margin-top: 0;
+ margin-bottom: 0;
 }
 
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+.login-header{
+ background: #28d;
+ padding: 20px;
+ font-size: 1.4em;
+ font-weight: normal;
+ text-align: center;
+ text-transform: uppercase;
+ color: #fff;
 }
 
-.loginbox input{
-    width: 100%;
-    margin-bottom: 20px;
+.login-container{
+ background: #ebebeb;
+ padding: 12px;
 }
 
-.loginbox input[type="text"], input[type="password"]
-{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-}
-.loginbox input[type="submit"]
-{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #fb2525;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-}
-.loginbox input[type="submit"]:hover
-{
-    cursor: pointer;
-    background: #ffc107;
-    color: #000;
-}
-.loginbox a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
+.login p{
+ padding: 12px;
 }
 
-.loginbox a:hover
-{
-    color: #ffc107;
+.login input{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+ background: #fff;
+ border-color: #bbb;
+ color: #555;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+ border-color: #888;
+}
+
+.login input[type="submit"] {
+ background: #28d;
+ border-color: transparent;
+ color: #fff;
+ cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+ background: #17c;
+}
+
+.login input[type="submit"]:focus {
+ border-color: #05a;
 }

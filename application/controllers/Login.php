@@ -15,6 +15,5 @@ class Login extends CI_Controller {
     $data['judul'] = 'Login';
 		$this->load->view('templates/header', $data);
     $this->load->view('Login/LoginPage');
-    $this->load->view('templates/footer');
 	}
 }
