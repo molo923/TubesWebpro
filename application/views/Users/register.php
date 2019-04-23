@@ -35,7 +35,7 @@
       </div>
       <!--UNTUK BAGOES, JANGAN LUPA ISI LINK SIGN IN/LOGIN DI HREFNYA-->
       <div class="container signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
+        <p>Already have an account? <a href="<?php echo base_url(); ?>Login">Sign in</a>.</p>
       </div>
     </div>
     </div>
