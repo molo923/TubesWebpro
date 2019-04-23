@@ -18,7 +18,7 @@
             <!--=================
                 UNTUK FAUZAN
             =====================-->
-            <a href="<?php echo base_url() ?>timbulan" class="btn-get-started scrollto">Laporkan Timbulan Sampah</a>
+            <a href="<?= base_url(); ?>timbulan_C" class="btn-get-started scrollto">Laporkan Timbulan Sampah</a>
         </div>
         </section><!-- #intro -->
 

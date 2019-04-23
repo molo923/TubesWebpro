@@ -21,7 +21,7 @@ class profile extends CI_Controller {
 	 public function __construct()
  	{
 			parent::__construct();
- 	 		$this->load->model('test');
+ 	 		
  	}
 
 	public function index()
