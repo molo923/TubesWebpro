@@ -32,6 +32,7 @@
       <div class="form-group"> <!--pull-right-->
          <button type="submit" id="register" class="registerbtn">Register</button>
       </div>
+      <!--UNTUK BAGOES, JANGAN LUPA ISI LINK SIGN IN/LOGIN DI HREFNYA-->
       <div class="container signin">
         <p>Already have an account? <a href="#">Sign in</a>.</p>
       </div>
