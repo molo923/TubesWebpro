@@ -13,13 +13,13 @@ class jemputsampah extends CI_Controller{
 	public function index(){
 		$data['judul'] = 'Home';
 		$this->load->view('templates/header', $data);
-		$this->load->view('jemput_sampah/index.php',$data);
+		$this->jemput();
 		$this->load->view('templates/footer');
 	}
 	public function jemput()
 	{
-
 		$data['datajemput'] = $this->M_web->GetJemput();
+		$this->load->view('jemput_sampah/index.php',$data);
 	}
 
 	public function hapusjemput($nama)
