@@ -18,8 +18,18 @@ class profile extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	 public function __construct()
+ 	{
+			parent::__construct();
+ 	 		$this->load->model('test');
+ 	}
+
 	public function index()
 	{
-		$this->load->view('welcome_message');
+    $data['judul'] = 'Profile';
+		$data['content'] = $this->db->get('profil');
+		$this->load->view('templates/header', $data);
+    $this->load->view('Profile/profilePage');
+    $this->load->view('templates/footer');
 	}
 }
