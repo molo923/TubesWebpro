@@ -24,8 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     };
     </script>
   </head>
-  <body>
-
+  <body class="ftco-section ftco-slant ftco-slant-light  bg-light ftco-slant ftco-slant-white" id="section-help">
     <div class='content'>
       <!-- Dropzone -->
       <form action="<?= base_url('index.php/upload/fileupload') ?>" class="dropzone" id="fileupload">
@@ -43,6 +42,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <input type="submit" class="btn btn-primary" id="input" value="input" placeholder="INPUT">
       </form>
     </div>
-
   </body>
 </html>

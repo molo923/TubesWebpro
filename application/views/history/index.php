@@ -5,7 +5,7 @@
     <title>history</title>
     <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
   </head>
-  <body>
+  <body class="ftco-section ftco-slant ftco-slant-light  bg-light ftco-slant ftco-slant-white" id="section-help">
     <h1>HISTORY</h1>
     <table class="table">
       <thead>
