@@ -28,7 +28,7 @@ class Users extends CI_Controller {
   {
     $this->load->library('form_validation');
     // field name, error message, validation rules
-    $this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[2]');
+    $this->form_validation->set_rules('name', 'Nama', 'trim|required|min_length[2]');
     $this->form_validation->set_rules('username', 'User Name', 'trim|required|min_length[4]');
     $this->form_validation->set_rules('email', 'Your Email', 'trim|required|valid_email');
     $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
