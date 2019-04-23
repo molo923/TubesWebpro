@@ -37,7 +37,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="<?= base_url(); ?>Registration">Registration</a>
+                    <a class="nav-item nav-link" href="<?= base_url('Users/'); ?>register">Registration</a>
                     <a class="nav-item nav-link" href="<?= base_url(); ?>Login">Login</a>
                 </div>
             </div>

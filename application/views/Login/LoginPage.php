@@ -12,7 +12,7 @@
             <input type="password" name="" placeholder="Masukkan Password">
             <input type="submit" name="" value="Login">
             <a href="#">Lost your password?</a><br>
-            <a href="#">Don't have an account?</a>
+            <a href="<?php echo base_url('Users/'); ?>register ">Don't have any account?</a>
         </form>
 
     </div>
