@@ -1,5 +1,11 @@
-<br>
-<br>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>history</title>
+    <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
+  </head>
+<body>
 <section class="ftco-section ftco-slant ftco-slant-light  bg-light ftco-slant ftco-slant-white" id="section-help">
       <div class="container">
         <div class="row mb-5">
@@ -73,3 +79,5 @@
         </div>
       </div>
     </section>
+</body>
+</html>
