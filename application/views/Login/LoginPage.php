@@ -1,10 +1,11 @@
 <html>
  <head>
-  <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/Login/style.css')?>">
+  <title>Login Coy</title>
+  <link rel="stylesheet" href="<?php echo base_url('assets/Login/style.css')?>">  
+ </head>
  <body>
   <div class="login">
-   <h1 class="login-header">Form Login</h1>
+   <h2 class="login-header">Form Login</h2>
    <form class="login-container" action="login.php" method="POST">
     <p>
      <input type="email" placeholder="Email" name="email" />
@@ -13,10 +14,9 @@
      <input type="password" placeholder="Password" name="password" />
     </p>
     <p>
-     <input type="submit" placeholder="Login Bre" />
+     <input type="submit" placeholder="Login" />
     </p>
    </form>
   </div>
  </body>
-  </head>
 </html>
