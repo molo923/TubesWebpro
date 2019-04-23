@@ -20,6 +20,9 @@ class help extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['judul'] = 'Help';
+		$this->load->view('templates/header', $data);
+		$this->load->view('Help/helppage');
+		$this->load->view('templates/footer');
 	}
 }

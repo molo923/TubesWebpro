@@ -29,7 +29,7 @@
 <header>
 
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light primary-color bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href=<?= base_url(); ?>>Smash</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,8 +37,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="<?= base_url(); ?>">Regis</a>
-                    <a class="nav-item nav-link" href="<?= base_url(); ?>">Login</a>
+                    <a class="nav-item nav-link" href="<?= base_url('Users/'); ?>register">Registration</a>
+                    <a class="nav-item nav-link" href="<?= base_url(); ?>Login">Login</a>
                 </div>
             </div>
         </div>
@@ -87,8 +87,10 @@
 
         <!--Section: Best Features-->
         <section id="best-features" class="text-center">
+
             <!-- Heading -->
-            <h2 class="mb-5">Smash Features</h2>
+            <h2 class="mb-5 font-weight-bold">Smash Features</h2>
+
             <!--Grid row-->
             <div class="row d-flex justify-content-center mb-4">
 
@@ -98,7 +100,7 @@
                 <!--Grid column-->
                 <div class="col-md-4 mb-1">
                     <i class="fas fa-address-card fa-3x"></i>
-                    <h4 class="my-4">Daftarnya Mudah</h4>
+                    <h4 class="my-4 font-weight-bold">Daftarnya Mudah</h4>
                     <p>Mau daftar ke SMASH?, cuma butuh identitas diri. Datamu dijamin aman.</p>
                 </div>
                 <!--Grid column-->
@@ -106,7 +108,7 @@
                 <!--Grid column-->
                 <div class="col-md-4 mb-1">
                     <i class="fas fa-comment-dollar fa-3x"></i>
-                    <h4 class="my-4">Dapet DUIT</h4>
+                    <h4 class="my-4 font-weight-bold">Dapet DUIT</h4>
                     <p>Daripada sampahmu nganggur dan menumpuk dirumah, mending kamu jual aja pakai SMASH.</p>
                 </div>
                 <!--Grid column-->
@@ -114,7 +116,7 @@
                 <!--Grid column-->
                 <div class="col-md-4 mb-1">
                     <i class="fas fa-bicycle fa-3x"></i>
-                    <h4 class="my-4">Layanan Jemput</h4>
+                    <h4 class="my-4 font-weight-bold">Layanan Jemput</h4>
                     <p>Males ngebuang sampah yang ada dirumah?, tenang aja, SMASH ada layanan jemputnya..</p>
                 </div>
                 <!--Grid column-->
@@ -122,50 +124,134 @@
             </div>
             <!--Grid row-->
 
-        </section>
-        <!--Section: Best Features-->
-
-        <hr class="my-5">
-
-        <!--Section: Examples-->
-        <section id="examples" >
-
-
-
-        </section>
-        <!--Section: Examples-->
-
-        <hr class="my-5">
-
-        <!--Section: Gallery-->
-        <section id="gallery">
-
-
-
-        </section>
-        <!--Section: Gallery-->
-
-        <hr class="my-5">
-
-        <!--Section: Contact-->
-        <section id="contact">
-
-
-
-        </section>
-        <!--Section: Contact-->
-
     </div>
 </main>
 </main>
 <!--Main layout-->
 
-<!--Footer-->
-<footer>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+<footer class="page-footer unique-color-dark">
+    <!-- Social buttons -->
+    <div class="primary-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
 
-</footer>
-<!--Footer-->
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                </div>
+                <!--Grid column-->
 
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <!--Facebook-->
+                    <a class="fb-ic ml-0">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!--Twitter-->
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!--Google +-->
+                    <a class="gplus-ic">
+                        <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin-->
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                    </a>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+
+  <!--Footer Links-->
+  <div class="container mt-5 mb-4 text-center text-md-left">
+      <div class="row mt-3">
+
+          <!--First column-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Company name</strong>
+              </h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit.</p>
+          </div>
+          <!--/.First column-->
+
+          <!--Second column-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Products</strong>
+              </h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                  <a href="#!">MDBootstrap</a>
+              </p>
+              <p>
+                  <a href="#!">MDWordPress</a>
+              </p>
+              <p>
+                  <a href="#!">BrandFlow</a>
+              </p>
+              <p>
+                  <a href="#!">Bootstrap Angular</a>
+              </p>
+          </div>
+          <!--/.Second column-->
+
+          <!--Third column-->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Useful links</strong>
+              </h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                  <a href="#!">Your Account</a>
+              </p>
+              <p>
+                  <a href="#!">Become an Affiliate</a>
+              </p>
+              <p>
+                  <a href="#!">Shipping Rates</a>
+              </p>
+              <p>
+                  <a href="#!">Help</a>
+              </p>
+          </div>
+          <!--/.Third column-->
+
+          <!--Fourth column-->
+          <div class="col-md-4 col-lg-3 col-xl-3">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Contact</strong>
+              </h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                  <i class="fas fa-home  mr-3"></i> New York, NY 10012, US</p>
+              <p>
+                  <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p>
+                  <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p>
+                  <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!--/.Fourth column-->
+      </div>
+  </div>
+  <!--/.Footer Links-->
+  </footer>
+<!--Footer-->
 
   <!-- /Start your project here-->
 

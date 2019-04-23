@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2019 at 07:37 AM
+-- Generation Time: Apr 22, 2019 at 04:58 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -61,6 +61,14 @@ CREATE TABLE `timbulan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `timbulan`
+--
+
+INSERT INTO `timbulan` (`id`, `judul`, `deskripsi`, `kota`) VALUES
+(1, 'a', 'a', 'a'),
+(2, 'weqewqqewq', 'fafafaa', 'qweqweqwe');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -102,7 +110,7 @@ ALTER TABLE `foto`
 -- AUTO_INCREMENT for table `timbulan`
 --
 ALTER TABLE `timbulan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
