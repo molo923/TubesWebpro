@@ -20,6 +20,8 @@ class landing extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['judul'] = 'Landing Page';
+		$this->load->view('templates/header_Landing', $data);
 		$this->load->view('Landing/LandingPage');
 	}
 }

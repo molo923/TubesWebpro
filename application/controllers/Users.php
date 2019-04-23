@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Users extends CI_Controller {
-   
+
     public function __construct() {
         parent::__construct();
         $this->load->model('Users_model', 'user');
@@ -14,13 +14,13 @@ class Users extends CI_Controller {
         $data['metaDescription'] = 'Dashboard';
         $data['metaKeywords'] = 'Dashboard';
         $this->load->view('users/dashboard', $data);
-  }   
+  }
   // Register
   public function register()
   {
   $data['title'] = 'Register';
         $data['metaDescription'] = 'Register';
-        $data['metaKeywords'] = 'Register';   
+        $data['metaKeywords'] = 'Register';
         $this->load->view('users/register', $data);
   }
   // Action Register
