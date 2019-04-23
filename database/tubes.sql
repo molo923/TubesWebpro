@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2019 at 04:58 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- Waktu pembuatan: 23 Apr 2019 pada 18.04
+-- Versi server: 10.1.36-MariaDB
+-- Versi PHP: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `akun`
+-- Struktur dari tabel `akun`
 --
 
 CREATE TABLE `akun` (
@@ -38,7 +38,7 @@ CREATE TABLE `akun` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `foto`
+-- Struktur dari tabel `foto`
 --
 
 CREATE TABLE `foto` (
@@ -50,7 +50,27 @@ CREATE TABLE `foto` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `timbulan`
+-- Struktur dari tabel `jemput`
+--
+
+CREATE TABLE `jemput` (
+  `id_jemput` int(11) NOT NULL,
+  `nama` varchar(220) NOT NULL,
+  `alamat` varchar(220) NOT NULL,
+  `massa_sampah` varchar(220) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `jemput`
+--
+
+INSERT INTO `jemput` (`id_jemput`, `nama`, `alamat`, `massa_sampah`) VALUES
+(2, 'gugum', 'bojongswan', '30');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `timbulan`
 --
 
 CREATE TABLE `timbulan` (
@@ -61,7 +81,7 @@ CREATE TABLE `timbulan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `timbulan`
+-- Dumping data untuk tabel `timbulan`
 --
 
 INSERT INTO `timbulan` (`id`, `judul`, `deskripsi`, `kota`) VALUES
@@ -73,106 +93,50 @@ INSERT INTO `timbulan` (`id`, `judul`, `deskripsi`, `kota`) VALUES
 --
 
 --
--- Indexes for table `akun`
+-- Indeks untuk tabel `akun`
 --
 ALTER TABLE `akun`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `foto`
+-- Indeks untuk tabel `foto`
 --
 ALTER TABLE `foto`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `timbulan`
+-- Indeks untuk tabel `jemput`
+--
+ALTER TABLE `jemput`
+  ADD PRIMARY KEY (`id_jemput`);
+
+--
+-- Indeks untuk tabel `timbulan`
 --
 ALTER TABLE `timbulan`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `akun`
+-- AUTO_INCREMENT untuk tabel `akun`
 --
 ALTER TABLE `akun`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `foto`
+-- AUTO_INCREMENT untuk tabel `foto`
 --
 ALTER TABLE `foto`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `timbulan`
+-- AUTO_INCREMENT untuk tabel `timbulan`
 --
 ALTER TABLE `timbulan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
-  CREATE TABLE `daftar` (
-    `id_daftar` int(11) NOT NULL,
-    `nama` varchar(50) NOT NULL,
-    `username` varchar(60) NOT NULL,
-    `email` varchar(60) NOT NULL,
-    `password` varchar(20) NOT NULL,
-    `status` int(20) NOT NULL
-  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-  --
-  -- Dumping data for table `daftar`
-  --
-
-  INSERT INTO `daftar` (`id_daftar`, `nama`, `username`, `email`, `password`, `status`) VALUES
-  (1, 'Rivaldo Ludovicus Sembiring', 'CucuFiraun', 'ravenclawgrifindor@yahoo.com', 'd93591bdf7860e1e4ee2', 1),
-  (2, 'Telkom Dormitory', 'CucuFiraun', 'ravenclawgrifindor@yahoo.com', 'd93591bdf7860e1e4ee2', 1),
-  (3, 'GoniGoni', '1301174445', 'rivaldoludovicussembiring@yahoo.co.id', 'e10adc3949ba59abbe56', 1),
-  (4, 'Rivaldo Ludovicus Sembiring', '1301174445', 'rivaldoludovicus20@gmail.com', '827ccb0eea8a706c4c34', 1),
-  (5, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (6, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (7, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (8, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (9, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (10, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (11, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (12, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (13, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (14, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (15, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (16, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (17, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (18, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (19, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (20, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (21, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (22, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (23, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (24, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (25, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (26, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
-  (27, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1);
-
-  --
-  -- Indexes for dumped tables
-  --
-
-  --
-  -- Indexes for table `daftar`
-  --
-  ALTER TABLE `daftar`
-    ADD PRIMARY KEY (`id_daftar`);
-
-  --
-  -- AUTO_INCREMENT for dumped tables
-  --
-
-  --
-  -- AUTO_INCREMENT for table `daftar`
-  --
-  ALTER TABLE `daftar`
-    MODIFY `id_daftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
