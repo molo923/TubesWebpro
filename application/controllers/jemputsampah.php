@@ -22,24 +22,24 @@ class jemputsampah extends CI_Controller{
 		$this->load->view('jemput_sampah/index.php',$data);
 	}
 
-	public function hapusjemput($nama)
+	public function hapus_jemput($nama)
 	{
 		$this->M_web->hapusjemput($nama);
-		redirect('index.php/web/mahasiswa');
+		redirect('index.php/jemputsampah/');
 	}
 	public function tambahjemput()
 	{
 		$nama = $this->input->post('nama');
 		$alamat = $this->input->post('alamat');
-		$massa = $this->input->post('massa');
+		$massa_sampah = $this->input->post('massa');
 		$data = array(
 			'nama' => $nama,
 			'alamat' => $alamat,
-			'massa' => $massa,
+			'massa' => $massa_sampah,
 		);
 		$this->M_web->tambah_jemput($data);
 
-		redirect('index.php/jemputsampah');
+		redirect('index.php/jemputsampah/');
 
 	}
 
@@ -47,14 +47,14 @@ class jemputsampah extends CI_Controller{
 	{
 		$nama = $this->input->post('nama');
 		$alamat = $this->input->post('alamat');
-		$massa = $this->input->post('massa');
+		$massa_sampah = $this->input->post('massa');
 		$data = array(
 			'nama' => $nama,
 			'alamat' => $alamat,
-			'massa' => $massa,
+			'massa' => $massa_sampah,
 		);
 		$this->M_web->edit_jemput($nama,$data);
 
-		redirect('index.php/web/mahasiswa');
+		redirect('index.php/jemputsampah/');
 	}
 }
