@@ -4,15 +4,15 @@
     <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
 </head>
 <div class="row page-content">
+    <div class="container">
   <div class="col-lg-12">
-    <h2 align="center">Register Form</h2>
+      <h2 align="center">Register Form</h2>
     <?php if(validation_errors()) { ?>
       <div class="alert alert-danger">
         <?php echo validation_errors(); ?>
       </div>
     <?php } ?>
     <?php echo form_open('users/actionregister'); ?>
-    
       <div class="form-group" align="center">
          <input type="text" name="name" class="form-control" id="name" placeholder="Name">
       </div>
@@ -37,7 +37,7 @@
         <p>Already have an account? <a href="#">Sign in</a>.</p>
       </div>
     </div>
+    </div>
     <?php echo form_close(); ?>
-  
 </div>
 </html>
