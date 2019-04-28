@@ -30,9 +30,15 @@ class Users_model extends CI_Model {
   }
   public function cekUser($email, $password){
     $this->db->where('email', $email);
-    $this->db->and('password', $password);
-    return $this->db->get('daftar')->result();
-    return;
+    $this->db->where('password', $password);
+    $query = $this->db->get('daftar');
+
+    if ($query->num_rows() > 0) {
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 
     public function createUser() {

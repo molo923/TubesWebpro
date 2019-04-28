@@ -13,14 +13,12 @@ class Login extends CI_Controller {
 	public function index()
 	{
     $this->load->view('Login/LoginPage');
-    $this->verifikasi();
 	}
 
   public function verifikasi(){
-    $user = $this->input->post('email');
-    $pass = $this->input->post('password');
-    $cek = $this->Users_model->cekUser($user, $pass);
-    if($cek){
+    $email = $this->input->post('email');
+    $password = $this->input->post('password');
+    if($this->Users_model->cekUser($email,MD5($password))){
       $this->load->view('home/index');
     }
     else{
