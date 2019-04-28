@@ -9,7 +9,7 @@ class Users_model extends CI_Model {
   private $_email;
   private $_password;
   private $_status;
-  
+
   public function setUserID($userID) {
     $this->_userID = $userID;
   }
@@ -27,8 +27,14 @@ class Users_model extends CI_Model {
   }
   public function setStatus($status) {
     $this->_status = $status;
-  } 
-    
+  }
+  public function cekUser($email, $password){
+    $this->db->where('email', $email);
+    $this->db->and('password', $password);
+    return $this->db->get('daftar')->result();
+    return;
+  }
+
     public function createUser() {
         $data = array(
             'nama' => $this->_name,

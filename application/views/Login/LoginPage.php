@@ -1,12 +1,12 @@
 <html>
  <head>
-  <title>Login Coy</title>
-  <link rel="stylesheet" href="<?php echo base_url('assets/Login/style.css')?>">  
+  <title>Login</title>
+  <link rel="stylesheet" href="<?php echo base_url('assets/Login/style.css')?>">
  </head>
  <body>
   <div class="login">
    <h2 class="login-header">Form Login</h2>
-   <form class="login-container" action="login.php" method="POST">
+   <form class="login-container" action="<?= base_url() ?>Login/verifikasi" method="POST">
     <p>
      <input type="email" placeholder="Email" name="email" />
     </p>

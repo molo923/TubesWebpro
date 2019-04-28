@@ -6,12 +6,26 @@ class Login extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
-
+    $this->load->model('Users_model');
 
   }
 
 	public function index()
 	{
     $this->load->view('Login/LoginPage');
+    $this->verifikasi();
 	}
+
+  public function verifikasi(){
+    $user = $this->input->post('email');
+    $pass = $this->input->post('password');
+    $cek = $this->Users_model->cekUser($user, $pass);
+    if($cek){
+      $this->load->view('home/index');
+    }
+    else{
+      $this->load->view('Landing/LandingPage');
+    }
+
+  }
 }
