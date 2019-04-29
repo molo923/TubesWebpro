@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Apr 2019 pada 18.04
--- Versi server: 10.1.36-MariaDB
--- Versi PHP: 5.6.38
+-- Generation Time: Apr 29, 2019 at 04:43 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,12 +25,57 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `akun`
+-- Table structure for table `daftar`
 --
+
+CREATE TABLE `daftar` (
+  `id_daftar` int(11) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `username` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `status` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `daftar`
+--
+
+INSERT INTO `daftar` (`id_daftar`, `nama`, `username`, `email`, `password`, `status`) VALUES
+(1, 'Rivaldo Ludovicus Sembiring', 'CucuFiraun', 'ravenclawgrifindor@yahoo.com', 'd93591bdf7860e1e4ee2', 1),
+(2, 'Telkom Dormitory', 'CucuFiraun', 'ravenclawgrifindor@yahoo.com', 'd93591bdf7860e1e4ee2', 1),
+(3, 'GoniGoni', '1301174445', 'rivaldoludovicussembiring@yahoo.co.id', 'e10adc3949ba59abbe56', 1),
+(4, 'Rivaldo Ludovicus Sembiring', '1301174445', 'rivaldoludovicus20@gmail.com', '827ccb0eea8a706c4c34', 1),
+(5, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(6, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(7, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(8, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(9, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(10, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(11, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(12, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(13, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(14, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(15, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(16, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(17, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(18, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(19, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(20, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(21, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(22, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(23, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(24, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(25, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(26, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(27, 'GoniGoni', 'ray1234', 'ravenclawgrifindor@yahoo.com', 'fcea920f7412b5da7be0', 1),
+(28, 'fafafafafafa', 'gaergadega', 'alvinda.julian@gmail.com', '9f05aa4202e4ce8d6a72', 1),
+(29, 'fara', 'gaergadega', 'kkk@gmail.com', 'farah', 1);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `foto`
+-- Table structure for table `foto`
 --
 
 CREATE TABLE `foto` (
@@ -42,27 +87,7 @@ CREATE TABLE `foto` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jemput`
---
-
-CREATE TABLE `jemput` (
-  `id_jemput` int(11) NOT NULL,
-  `nama` varchar(220) NOT NULL,
-  `alamat` varchar(220) NOT NULL,
-  `massa_sampah` varchar(220) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `jemput`
---
-
-INSERT INTO `jemput` (`id_jemput`, `nama`, `alamat`, `massa_sampah`) VALUES
-(2, 'gugum', 'bojongswan', '30');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `timbulan`
+-- Table structure for table `timbulan`
 --
 
 CREATE TABLE `timbulan` (
@@ -73,62 +98,56 @@ CREATE TABLE `timbulan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `timbulan`
+-- Dumping data for table `timbulan`
 --
 
 INSERT INTO `timbulan` (`id`, `judul`, `deskripsi`, `kota`) VALUES
-(1, 'a', 'a', 'a'),
-(2, 'weqewqqewq', 'fafafaa', 'qweqweqwe');
+(5, 'fwef', 'fwefwe', 'fwefew'),
+(6, 'tqteq', 'tqetqqe', 'teqw');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `akun`
+-- Indexes for table `daftar`
 --
-ALTER TABLE `akun`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `daftar`
+  ADD PRIMARY KEY (`id_daftar`);
 
 --
--- Indeks untuk tabel `foto`
+-- Indexes for table `foto`
 --
 ALTER TABLE `foto`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jemput`
---
-ALTER TABLE `jemput`
-  ADD PRIMARY KEY (`id_jemput`);
-
---
--- Indeks untuk tabel `timbulan`
+-- Indexes for table `timbulan`
 --
 ALTER TABLE `timbulan`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `akun`
+-- AUTO_INCREMENT for table `daftar`
 --
-ALTER TABLE `akun`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `daftar`
+  MODIFY `id_daftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT untuk tabel `foto`
+-- AUTO_INCREMENT for table `foto`
 --
 ALTER TABLE `foto`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `timbulan`
+-- AUTO_INCREMENT for table `timbulan`
 --
 ALTER TABLE `timbulan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
