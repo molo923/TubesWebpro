@@ -21,15 +21,38 @@ class profile extends CI_Controller {
 	 public function __construct()
  	{
 			parent::__construct();
- 	 		
+			$this->load->model('profilModel');
+
  	}
 
 	public function index()
 	{
     $data['judul'] = 'Profile';
-		$data['content'] = $this->db->get('profil');
+		$data['profil'] = $this->db->get('daftar');
 		$this->load->view('templates/header', $data);
     $this->load->view('Profile/profilePage');
     $this->load->view('templates/footer');
+	}
+public function editPage()
+{
+	$data['judul'] = 'editProfile';
+	$data['profil'] = $this->db->get('daftar');
+	$this->load->view('templates/header', $data);
+	$this->load->view('Profile/editProfile');
+	$this->load->view('templates/footer');
+	}
+
+	public function editProfil()
+	{
+		$nama = $this->input->post('nama');
+		$username = $this->input->post('username');
+		$email = $this->input->post('email');
+		$data = array(
+			'nama' => $nama,
+			'email' => $email,
+		);
+		$this->profilModel->edit_profile($username,$data);
+
+		redirect('index.php/profile');
 	}
 }
