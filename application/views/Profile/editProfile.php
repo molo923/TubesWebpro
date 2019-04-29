@@ -8,7 +8,7 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <?php foreach($profil->result_array() as $key) { ?>
+  <?php foreach($content->result_array() as $key) { ?>
 
   <!--
   User Profile Sidebar by @keenthemes
@@ -26,7 +26,7 @@
   				</div>
   				<!-- END SIDEBAR USERPIC -->
   				<!-- SIDEBAR USER TITLE -->
-          <div class="profile-usertitle">
+  				<div class="profile-usertitle">
   					<div class="profile-usertitle-name">
   						<?php echo $key['nama']?>
   					</div>
@@ -58,11 +58,21 @@
   			</div>
   		</div>
   		<div class="col-md-9">
-              <div class="profile-content">
-  			       
-                </div>
+            <div class="profile-content">
+              <form method="post" action="<?php echo base_url('index.php/profil/editProfil/'); ?>">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="username" name="username" value="<?php echo $key->username ?>"  disabled>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nama</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama" name="nama"  value="<?php echo $key->nama ?>" required>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Email</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email" name="email" value="<?php echo $key->email ?>" required>
+          </div>
               </div>
-
+  		</div>
+  	</div>
+  </div>
 <?php } ?>
   <br>
   <br>
