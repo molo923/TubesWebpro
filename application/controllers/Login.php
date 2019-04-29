@@ -18,11 +18,11 @@ class Login extends CI_Controller {
   public function verifikasi(){
     $email = $this->input->post('email');
     $password = $this->input->post('password');
-    if($this->Users_model->cekUser($email,MD5($password))){
-      $this->load->view('home/index');
+    if($this->Users_model->cekUser($email,$password)){
+      redirect('Home');
     }
     else{
-      $this->load->view('Landing/LandingPage');
+      redirect('Landing');
     }
 
   }

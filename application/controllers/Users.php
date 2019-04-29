@@ -46,7 +46,7 @@ class Users extends CI_Controller {
       $this->user->setName($name);
       $this->user->setUserName($username);
       $this->user->setEmail($email);
-      $this->user->setPassword(MD5($password));
+      $this->user->setPassword($password);
       $this->user->setStatus(1);
       // insert values in database
       $this->user->createUser();
