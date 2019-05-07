@@ -6,7 +6,7 @@
  <body>
   <div class="login">
    <h2 class="login-header">Form Login</h2>
-   <form class="login-container" action="<?= base_url() ?>Login/verifikasi" method="POST">
+   <form class="login-container" action="<?= base_url() ?>Login/aksi_login" method="POST">
     <p>
      <input type="email" placeholder="Email" name="email" />
     </p>

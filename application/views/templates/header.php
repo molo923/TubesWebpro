@@ -37,7 +37,7 @@
                       <a class="nav-item nav-link" href="<?= base_url(); ?>history">History</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>help">Help</a>
                       <a class="nav-item nav-link" href="<?= base_url(); ?>profile">Profile</a>
-                      <a class="nav-item nav-link" href="<?= base_url(); ?>Landing">Logout</a>
+                      <a class="nav-item nav-link" href="<?php echo base_url('login/logout'); ?>">Logout</a>
                   </div>
               </div>
           </div>

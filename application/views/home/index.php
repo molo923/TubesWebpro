@@ -9,7 +9,7 @@
     <body>
         <section id="intro">
         <div class="intro-text">
-            <h2>Selamat Datang di BankSampah.id</h2>
+            <h2>Hai, <?php echo $this->session->userdata("nama"); ?></h2>
             <p>Collect.Call.Earn</p>
             <!--=================
                 UNTUK AGUNG
