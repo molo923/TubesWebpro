@@ -26,9 +26,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
   <body class="ftco-section ftco-slant ftco-slant-light  bg-light ftco-slant ftco-slant-white" id="section-help">
     <div class='content'>
-      <!-- Dropzone -->
-      <form action="<?= base_url('index.php/upload/fileupload') ?>" class="dropzone" id="fileupload">
-      </form>
       <form method="POST" action="<?= base_url() ?>timbulan_C/tambah">
         <div class="form-group">
           <input type="text" class="form-control" id="formGroupInput" placeholder="JUDUL" name="judul" required >
